@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Navigation = ({ user }) => {
     
@@ -12,7 +13,7 @@ const Navigation = ({ user }) => {
             <Navbar.Toggle aria-controls='zine-navbar' />
             <Navbar.Collapse id='zine-navbar'>
                 <Nav className='me-auto'>                    
-                    {user ? <Nav.Link href='/admin'>Admin Page</Nav.Link> : ''}
+                    {user ? <Nav.Link><Link to={'/admin'}>Admin Page</Link></Nav.Link> : ''}
                     
                 </Nav>
             </Navbar.Collapse>
