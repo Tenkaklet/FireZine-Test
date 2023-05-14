@@ -81,7 +81,7 @@ const Registration = () => {
                                 <Form.Control type='password' placeholder='Enter Password' value={password} onChange={(e) => setPassword(e.target.value)} />
                             </Form.Group>
                             <Button variant='success' className='mx-3' type='submit'>Zine It!</Button>
-                            {success ? <Button variant='success' className='mx-3'><Link to={'/admin'}>Enter Admin Page!</Link></Button> : ''}
+                            {success ? <Button variant='success' className='mx-3'> <Link to={'/admin'}>Enter Admin Page!</Link></Button> : ''}
                         </Form>
                     </Tab>                    
                 </Tabs>
