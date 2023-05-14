@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Container, Image } from 'react-bootstrap';
 import friends from '../assets/us.jpg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -11,7 +12,11 @@ const Home = () => {
           <Image src={friends} thumbnail />
         </header>
         <main className='home-main' role='main'>
-          <Button href='/registration'>Go to Register!</Button>
+          <Button>
+            <Link to={'/registration'}>
+            Go to Register!
+            </Link>
+          </Button>
         </main>
       </Container>
     </>
