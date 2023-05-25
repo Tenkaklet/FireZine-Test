@@ -13,8 +13,7 @@ const Navigation = ({ user }) => {
             <Navbar.Toggle aria-controls='zine-navbar' />
             <Navbar.Collapse id='zine-navbar'>
                 <Nav className='me-auto'>                    
-                    {user ? <Nav.Link><Link to={'/admin'}>Admin Page</Link></Nav.Link> : ''}
-                    
+                    {user ? <Link to={'/admin'}>Admin Page</Link>: ''}
                 </Nav>
             </Navbar.Collapse>
         </Container>
